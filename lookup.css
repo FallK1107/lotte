@@ -1,0 +1,59 @@
+/* 표 디자인 */
+table, td {
+    border-top: 1px solid #bcbcbc;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    border-top: 2.5px solid #ff3939;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+table {
+    width: 600px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+td {
+    text-align: center;
+}
+
+/* 버튼 디자인 */
+.btn_1 {
+    margin-right: 50px;
+    border-radius: 2rem;
+}
+
+.btn_2 {
+    margin-left: 50px;
+    border-radius: 2rem;
+}
+
+.btn_gr button{
+    border: 3px solid rgb(250, 62, 62);
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+}
+
+.btn_gr button:hover {
+    color: white;
+    background-color: rgb(250, 62, 62);
+}
+
+/* 지도 */
+.map {
+    background-color: tomato;
+    background-image: url("../img/map.PNG");
+    background-size: cover;
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 5px #aaa;
+    border-radius: 1rem;
+}

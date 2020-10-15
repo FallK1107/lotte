@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>롯데택배 택배조회페이지 입니다</title>
+    <link rel="stylesheet" href="end.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/topNav.css">
+    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=46a96fc760ce7e818d2592e2cf7d8cce"></script> -->
+    
+    <style>
+        #jb-container {
+          width: 940px;
+          margin: 10px auto;
+          padding: 20px;
+        }
+        #jb-header {
+          padding: 20px;
+          width: 400px;
+          margin-bottom: 20px;
+          border-bottom: 5px solid #ff3939;
+        }
+        #jb-content {
+          width: 900px;
+          padding: 2rem;
+          /* margin-bottom: 20px; */
+          float: left;
+          text-align: center;
+          box-shadow: 5px 5px 5px #aaa;
+        }
+        #jb-footer {
+          clear: both;
+          padding: 80px;
+          float: right;
+          text-align: center;
+          width: 300px;
+          margin-bottom: 20px;
+          border-top: 5px solid #ff3939;
+        }
+        @media ( max-width: 480px ) {
+          #jb-container {
+            width: auto;
+          }
+          #jb-content {
+            float: none;
+            width: auto;
+          }
+          #jb-sidebar {
+            float: none;
+            width: auto;
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+      <img src="../img/악수.jpg" class="top_img">   <!--상단 이미지 넣어주세요-->
+        <div class="subVisualArea">
+            <div class="inner">
+                <h1 class="topTitle">고객의 소리</h1> <!--h1 태그 안에 글자만 수정해주세요-->
+            </div>
+        </div>
+    </header>
+
+    <nav class="topNav">
+      <ul class="leftNavContainer">
+          <img src="../img/lottelogo.png" class="mainLogo">
+      </ui>
+      <ul class="centerNavContainer">
+          <li class="centerNav"><a href="#">회사소개</a></li>
+          <li class="centerNav"><a href="#">공지사항</a></li>
+          <li class="centerNav"><a href="#">예약접수</a></li>
+          <li class="centerNav"><a href="#">Q&A</a></li>
+      </ul>
+      <ul class="rightNavContainer">
+          <li class="rightNav"><a href="#">로그인</a></li> 
+          <li class="rightNav"> / </li>
+          <li class="rightNav"><a href="#">회원가입</a></li>
+          <li class="rightNav">EN</li>
+          <li><img src="../img/wMenuLogo.png" id="wMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
+      </ui>
+    </nav>
+
+    <div class="wTopNav" style="display: none;">
+      <ul class="leftNavContainer">
+          <a href="../main.html"><img src="../img/rlottelogo.png" class="mainLogo"></a>
+      </ui>
+      <ul class="centerNavContainer">
+          <li class="centerNav"><a href="#">회사소개</a></li>
+          <li class="centerNav"><a href="#">공지사항</a></li>
+          <li class="centerNav"><a href="#">예약접수</a></li>
+          <li class="centerNav"><a href="#">Q&A</a></li>
+      </ul>
+      <ul class="rightNavContainer">
+          <li class="rightNav"><a href="#">로그인</a></li> 
+          <li class="rightNav"> / </li>
+          <li class="rightNav"><a href="#">회원가입</a></li>
+          <li class="rightNav">EN</li>
+          <li><img src="../img/rMenuLogo.png" id="rMenuLogo" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"></li>
+      </ui>
+    </div>
+
+    <div class="detailNav" style="display: none">
+      <div style="display: flex;">
+          <div style="flex-grow: 0.8;">
+          </div>
+          <div style="flex-grow: 3;">
+              <table class="detailTableContainer">
+                  <tr class="detailTable">
+                      <td>회사소개</td>
+                      <td>택배서비스</td>
+                      <td>택배 조회</td>
+                      <td>Q&A</td>
+                  </tr>
+                  <tr class="detailTable">
+                      <td>투자정보</td>
+                      <td>네트워크</td>
+                      <td>위탁장소지정</td>
+                      <td>자주 묻는 질문</td>
+                  </tr>
+                  <tr class="detailTable">
+                      <td>인재채용</td>
+                      <td></td>
+                      <td>택배접수</td>
+                      <td>고객의소리</td>
+                  </tr>
+                  <tr class="detailTable">
+                      <td>PR</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                  </tr>
+              </table>
+          </div>
+          <div  style="flex-grow: 1.5;">
+          </div>
+      </div>
+    </div>
+
+    <div id="jb-container">
+      <div id="jb-header">
+        <p></p>
+      </div>
+
+      <div id="jb-content">
+          <div class="notice">
+            <p>소중한 의견 감사합니다</p>
+            <p>해당 접수내용에 관련한 답변은 고객님의 이메일로 발송됩니다</p>
+          </div>
+      </div>
+
+      <div id="jb-sidebar"></div>
+      
+      <div id="jb-footer">
+        <div class="btn_gr">
+          <a href="list.html"><button class="btn_1">접수내역보기</button></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- <footer>
+      <div class="footer-inf1">
+        <div class="container">
+          <ul class="linklist">
+            <li class="f-bold">개인정보처리방침</li>
+            <li>영상정보기기운영/관리방침</li>
+            <li>택배표준약관</li>
+            <li>안전보건방침</li>
+            <li>이메일주소무단수집거부</li>
+            <li class="f-box">
+              <a class="f-group">패밀리 사이트</a>
+              <a class="f-group">부가서비스</a>
+            </li>
+            <li>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-inf2">
+        <div class="container">
+          <img src="../img/logo.png" class="ftlogo" alt="롯데택배">
+          <ul class="f-info1">
+            <li>서울시 중구 통일로 10(연세 세브란스 빌딩)</li>
+            <li>대표자 : 박찬복</li>
+            <li class="call-number">택배고객센터 1588-2121</li>
+            <li>사업자등록번호 : 102-81-23012</li>
+            <li>통신판매신고 : 제2017-서울중구-0433호</li>
+            <li class="copyright">COPYRIGHT © 2019 LOTTE GLOBAL LOGISTICS CO,.LTD ALL RIGHTS RESERVED.</li>
+          </ul>
+          <img src="../img/side_logo.jpg" class="ciclogo" alt="인증종합물류기업">
+        </div>
+      </div>
+    </footer> -->
+</body>
+</html>
+
+<script>  
+  let btn_menuList = document.querySelector("#wMenuLogo");
+  let r_btn_menuList = document.querySelector("#rMenuLogo");
+  btn_menuList.addEventListener("click",function(e){
+      let menu_List = document.querySelector(".detailNav");
+      menu_List.style.display == "none" ? menu_List.style.display = "block" : menu_List.style.display = "none";
+      let topnav = document.querySelector(".topNav");
+      topnav.style.display == "none" ? topnav.style.display="block": topnav.style.display="none";
+      let wtopnav = document.querySelector(".wTopNav");
+      wtopnav.style.display == "none" ? wtopnav.style.display = "block" : wtopnav.style.display = "none";
+  });
+  r_btn_menuList.addEventListener("click",function(e){
+      let wtopnav = document.querySelector(".wTopNav");
+      wtopnav.style.display == "none" ? wtopnav.style.display = "block" : wtopnav.style.display = "none";
+      let menu_List = document.querySelector(".detailNav");
+      menu_List.style.display == "none" ? menu_List.style.display = "block" : menu_List.style.display = "none";
+      let topnav = document.querySelector(".topNav");
+      topnav.style.display == "none" ? topnav.style.display="block": topnav.style.display="none";
+  });
+</script>

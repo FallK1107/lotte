@@ -1,0 +1,26 @@
+/* 버튼 디자인 */
+.btn_1 {
+    /* margin-right: 0rem; */
+    position: relative;
+    right: 18rem;
+    border-radius: 2rem;
+}
+
+.btn_gr button{
+    border: 3px solid rgb(250, 62, 62);
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+}
+
+.btn_gr button:hover {
+    color: white;
+    background-color: rgb(250, 62, 62);
+}
+
+/* 메인안내문 디자인 */
+.notice {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}

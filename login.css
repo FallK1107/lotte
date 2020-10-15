@@ -1,0 +1,83 @@
+/* 상단 인사글 */
+.main {
+    font-size: medium;
+    background-color: rgb(250, 62, 62);
+    padding: 0.5rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    border-radius: 1rem;
+    color: whitesmoke;
+    text-align: center;
+    width: 54rem;
+    height: 2.5rem;
+}
+
+/* 회원 로그인 */
+.login {
+    border-radius: 0.5rem;
+    margin-top: 30px;
+}
+
+.log_l {
+    width: 9.5rem;
+    height: 45px;
+    padding: 0.5rem;
+    background-color: rgb(247, 47, 47);
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+    border-radius: 0.8rem;
+    text-align: center;
+    position: relative;
+    left: 6rem;
+    color: ivory;
+    letter-spacing: 1px;
+}
+
+
+li{
+    display: inline-flex;
+}
+
+
+/* 버튼 */
+.agree {
+    background-color: blanchedalmond;
+    width: 180px;
+    height: 45px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    left: 5.5rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 1px;
+}
+
+.agr {
+    background-color: whitesmoke;
+    width: 180px;
+    height: 45px;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    left: 20.8rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* 제목 */
+.mem {
+    color: white;
+    font-weight: bold;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: medium;
+}
+
+.member {
+    color: black;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
